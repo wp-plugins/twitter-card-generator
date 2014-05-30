@@ -24,7 +24,7 @@ class Twitter_Card_Generator {
 	 *
 	 * @var     string
 	 */
-	protected $version = '1.0.1';
+	protected $version = '1.0.2';
 
 	/**
 	 * Identifier : Twitter Card Generator
@@ -51,7 +51,7 @@ class Twitter_Card_Generator {
 	 *
 	 * @var      string
 	 */
-	protected $plugin_screen_hook_suffix = null;
+	protected $plugin_screen_hook_suffix = 'twitter-card-generator';
 
 	/**
 	 * Initialize the plugin by setting localization, filters, and administration functions.
@@ -113,43 +113,7 @@ class Twitter_Card_Generator {
 
 		load_textdomain( $domain, WP_LANG_DIR . '/' . $domain . '/' . $domain . '-' . $locale . '.mo' );
 		load_plugin_textdomain( $domain, FALSE, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
-	}//end load_plugin_textdomain
-
-	/**
-	 * Register and enqueue admin-specific style sheet.
-	 *
-	 * @since     1.0.0
-	 *
-	 * @return    null    Return early if no settings page is registered.
-	 */
-	public function enqueue_admin_styles() {
-		if ( ! isset( $this->plugin_screen_hook_suffix ) ) {
-			return;
-		}
-
-		$screen = get_current_screen();
-		if ( $screen->id == $this->plugin_screen_hook_suffix ) {
-			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'css/admin.css', __FILE__ ), array(), $this->version );
-		}
-	}//end enque_admin_styles
-
-	/**
-	 * Register and enqueue admin-specific JavaScript.
-	 *
-	 * @since     1.0.0
-	 *
-	 * @return    null    Return early if no settings page is registered.
-	 */
-	public function enqueue_admin_scripts() {
-		if ( ! isset( $this->plugin_screen_hook_suffix ) ) {
-			return;
-		}
-
-		$screen = get_current_screen();
-		if ( $screen->id == $this->plugin_screen_hook_suffix ) {
-			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'js/admin.js', __FILE__ ), array( 'jquery' ), $this->version );
-		}
-	}//end enqueue_admin_scripts
+	} //end load_plugin_textdomain
 
 	/**
 	 * Register and enqueue public-facing style sheet.
@@ -177,8 +141,11 @@ class Twitter_Card_Generator {
 	public function display_plugin_admin_page() {
 		//Get the admin page
 		include_once( 'views/admin.php' );
+
 		//Javascript
-		wp_enqueue_script( 'Twitter Card Generator', plugins_url() . '/' . $this->plugin_slug . '/js/admin.js');
+		wp_enqueue_script( $this->plugin_slug . '-admin-scripts', plugins_url( '/' . $this->plugin_slug . '/js/admin.js') );
+		// styles
+		wp_enqueue_style( $this->plugin_slug . '-admin-styles', plugins_url( '/' . $this->plugin_slug . '/css/admin.css' ) );
 	}//end display_plugin_admin_page
 
 	/**
@@ -187,8 +154,6 @@ class Twitter_Card_Generator {
 	* @since 		1.0.1
 	*/
 	public function init_setup() {
-		//Enque styles for the admin page
-		wp_enqueue_style( 'admin-styles', plugins_url( $this->plugin_slug . '/css/admin.css' ) );
 		//Add the seo tags to the header
 		add_action( 'wp_head', array( $this, 'generate_tags' ) );
 		//Add custom user field for twitter username
@@ -207,15 +172,6 @@ class Twitter_Card_Generator {
 		//Allow featured images on posts
 		add_theme_support( 'post-thumbnails' );
 	}//end init_setup
-
-	/**
-	* Save custom meta boxes functions
-	*
-	* @since 1.0.1
-	*/
-	public function custom_meta_box_setup() {
-
-	}//end custom_meta_box_setup
 
 	/**
 	* Add the settings menu

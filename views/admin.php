@@ -126,7 +126,7 @@ if ( isset( $_POST['type'] ) ) {
 						</tr>
 						<tr>
 							<th>
-								<label for="iamge">Image to use if post does not have a featured image set:  <a href="<?php echo get_bloginfo( 'wpurl' ) . '/wp-admin/upload.php'; ?>">Add New</a></label>
+								<label for="image">Image to use if post does not have a featured image set:  <a href="<?php echo get_bloginfo( 'wpurl' ) . '/wp-admin/upload.php'; ?>">Add New</a></label>
 							</th>
 							<td style="width:200px;">
 								<div style="width:200px;">
@@ -165,7 +165,7 @@ if ( isset( $_POST['type'] ) ) {
 						</tr>
 						<tr>
 							<th>
-								<label for="iamge">Image to use if post does not have a featured image set:  <a href="<?php echo get_bloginfo( 'wpurl' ) . '/wp-admin/upload.php'; ?>">Add New</a></label>
+								<label for="image">Image to use if post does not have a featured image set:  <a href="<?php echo get_bloginfo( 'wpurl' ) . '/wp-admin/upload.php'; ?>">Add New</a></label>
 							</th>
 							<td style="width:200px;">
 								<div style="width:200px;">
@@ -210,7 +210,7 @@ if ( isset( $_POST['type'] ) ) {
 						</tr>
 						<tr>
 							<th>
-								<label for="iamge">Image to use if post does not have a featured image set:  <a href="<?php echo get_bloginfo( 'wpurl' ) . '/wp-admin/upload.php'; ?>">Add New</a></label>
+								<label for="image">Image to use if post does not have a featured image set:  <a href="<?php echo get_bloginfo( 'wpurl' ) . '/wp-admin/upload.php'; ?>">Add New</a></label>
 							</th>
 							<td style="width:200px;">
 								<div style="width:200px;">

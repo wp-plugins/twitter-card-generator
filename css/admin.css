@@ -1,5 +1,11 @@
 /*Admin Page Styles*/
-.summary-settings, .summary_large_image-settings, .photo-settings, .gallery-settings, .app-settings, .player-settings, .product-settings {
+.summary-settings,
+.summary_large_image-settings,
+.photo-settings,
+.gallery-settings,
+.app-settings,
+.player-settings,
+.product-settings {
 	display: none;
 }
 

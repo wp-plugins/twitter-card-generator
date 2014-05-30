@@ -4,8 +4,8 @@ Contributors: Riley MacDonald
 Donate link: http://www.theredspace.com/
 Tags: Meta, Tags, Twitter, Cards, Card, Twitter Cards, Tweet, Summary, Photo, Gallery, App
 Requires at least: 3.5.1
-Tested up to: 3.6
-Stable tag: 1.0.1
+Tested up to: 3.9.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -115,10 +115,17 @@ Ensure the image is less then 1MB in file size, larger then 60px x 60px in dimen
 * Mulitple Card support added.
 * Settings menu added.
 
+= 1.0.2 =
+* Added fix to prevent admin styles loading on front end.
+* Minor code maintenance
+
 == Upgrade Notice ==
 
 = 1.0.0 =
 * Upgrade to latest version for multiple card support.
 
 = 1.0.1 =
+* Latest version
+
+= 1.0.2 =
 * Latest version
