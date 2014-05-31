@@ -11,7 +11,7 @@
  * Plugin Name: Twitter Card Generator
  * Plugin URI:  https://github.com/silencecm/wp-twitter-card-generator
  * Description: Generate Twitter Cards for tweets linking posts
- * Version:     1.0.2
+ * Version:     1.0.3
  * Author:      theRedSpace
  * Author URI:  http://www.theredspace.com/
  * Text Domain: plugin-name-locale
