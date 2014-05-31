@@ -24,7 +24,7 @@ class Twitter_Card_Generator {
 	 *
 	 * @var     string
 	 */
-	protected $version = '1.0.2';
+	protected $version = '1.0.3';
 
 	/**
 	 * Identifier : Twitter Card Generator
@@ -172,6 +172,15 @@ class Twitter_Card_Generator {
 		//Allow featured images on posts
 		add_theme_support( 'post-thumbnails' );
 	}//end init_setup
+
+	/**
+	* Save custom meta boxes functions
+	*
+	* @since 1.0.1
+	*/
+	public function custom_meta_box_setup() {
+
+	}//end custom_meta_box_setup
 
 	/**
 	* Add the settings menu
