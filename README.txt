@@ -132,3 +132,6 @@ Ensure the image is less then 1MB in file size, larger then 60px x 60px in dimen
 
 = 1.0.2 =
 * Latest version
+
+= 1.0.3 = 
+* Latest version
