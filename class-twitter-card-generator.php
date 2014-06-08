@@ -238,8 +238,8 @@ class Twitter_Card_Generator {
 				<?php if ( get_option( 'twitter-card-type' ) != 'photo' ) : ?>
 					<meta name="twitter:description" content="<?php echo $post->post_excerpt; ?>"/>
 				<?php endif; //end get_option photo if ?>
-				<?php if ( get_option( 'twitter-card-type') != 'gallery' ) : ?>
-					<?php if ( has_post_thumbnail( $post->ID ) ) : $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), array( 150, 150 ) ); ?>
+				<?php if ( get_option( 'twitter-card-type') != 'gallery' ) : ?>					
+					<?php if ( has_post_thumbnail( $post->ID ) ) : $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
 						<meta name="twitter:image" content="<?php echo $image[0]; ?>" />
 					<?php else : ?>
 						<meta name="twitter:image" content="<?php echo get_option('twitter-summary-image'); ?>" />

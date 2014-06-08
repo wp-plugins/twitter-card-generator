@@ -2,11 +2,11 @@
 /**
  * Fired when the plugin is uninstalled.
  *
- * @package   Seo Generator
+ * @package   Twitter_Card_Generator
  * @author    Riley MacDonald <riley_macdonald@hotmail.com>
  * @license   GPL-2.0+
- * @link      http://rileymacdonald.ca
- * @copyright 2013 Riley MacDonald
+ * @link      http://www.theredspace.com/
+ * @copyright 2013 theRedSpace
  */
 
 // If uninstall, not called from WordPress, then exit
