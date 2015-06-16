@@ -5,7 +5,7 @@
  * @package   Twitter_Card_Generator
  * @author    Riley MacDonald <riley_macdonald@hotmail.com>
  * @license   GPL-2.0+
- * @link      http://www.theredspace.com/
+ * @link      http://www.rileymacdonald.ca
  * @copyright 2013 theRedSpace
  */
 

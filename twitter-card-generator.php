@@ -4,7 +4,7 @@
  * @package   Twitter_Card_Generator
  * @author    Riley MacDonald <riley_macdonald@hotmail.com>
  * @license   GPL-2.0+
- * @link      http://www.theredspace.com/
+ * @link      http://www.rileymacdonald.ca
  * @copyright 2013 theRedSpace
  *
  * @wordpress-plugin
@@ -13,7 +13,7 @@
  * Description: Generate Twitter Cards for tweets linking posts
  * Version:     1.0.4
  * Author:      theRedSpace
- * Author URI:  http://www.theredspace.com/
+ * Author URI:  http://www.rileymacdonald.ca
  * Text Domain: plugin-name-locale
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
