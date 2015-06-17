@@ -6,7 +6,7 @@
  * @author    Riley MacDonald <riley_macdonald@hotmail.com>
  * @license   GPL-2.0+
  * @link      http://www.rileymacdonald.ca
- * @copyright 2013 theRedSpace
+ * @copyright 2013 Riley MacDonald
  */
 
 // If uninstall, not called from WordPress, then exit

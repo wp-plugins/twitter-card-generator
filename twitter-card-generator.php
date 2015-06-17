@@ -5,14 +5,14 @@
  * @author    Riley MacDonald <riley_macdonald@hotmail.com>
  * @license   GPL-2.0+
  * @link      http://www.rileymacdonald.ca
- * @copyright 2013 theRedSpace
+ * @copyright 2013 Riley MacDonald
  *
  * @wordpress-plugin
  * Plugin Name: Twitter Card Generator
  * Plugin URI:  https://github.com/silencecm/wp-twitter-card-generator
  * Description: Generate Twitter Cards for tweets linking posts
- * Version:     1.0.4
- * Author:      theRedSpace
+ * Version:     1.0.5
+ * Author:      Riley MacDonald
  * Author URI:  http://www.rileymacdonald.ca
  * Text Domain: plugin-name-locale
  * License:     GPL-2.0+
